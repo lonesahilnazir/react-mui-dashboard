@@ -3,7 +3,7 @@ function App() {
   return (
       <Container maxWidth={false} sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh', bgcolor: 'primary.main'}}>
         <Button variant="contained" color="primary">
-          Hello World
+          Hello Worlds
         </Button>
       </Container>
   );
