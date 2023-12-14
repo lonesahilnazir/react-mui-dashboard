@@ -8,7 +8,7 @@ const AppRoutes = () => {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route element={<App />} path="/" />
-        <Route path="error" element={<ErrorsPage />} />
+        <Route path="error/*" element={<ErrorsPage />} />
         <Route path="*" element={<Navigate to='/error' />} />
       </Routes>
     </BrowserRouter>

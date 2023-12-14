@@ -1,9 +1,27 @@
+import { Typography, Button, Link } from "@mui/material";
+
 const Error404 = () => {
   return (
-    <div className="error404">
-      <h1>404</h1>
-      <p>Page not found</p>
-    </div>
+    <>
+      <Typography
+        variant="h5"
+        sx={{ color: "warning.dark", textAlign: "center" }}
+      >
+        Oops! The page you are looking for might be in another castle.
+      </Typography>
+      <Typography variant="h1" sx={{ color: "primary.dark", my: 5 }}>
+        404
+      </Typography>
+      <Button
+        component={Link}
+        to="/"
+        variant="contained"
+        size="large"
+        color="primary"
+      >
+        Go Home
+      </Button>
+    </>
   );
 };
 
